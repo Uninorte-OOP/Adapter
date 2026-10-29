@@ -6,7 +6,7 @@ package main;
 
 import core.base.adapter.Adapter;
 import core.base.adapter.Target;
-import core.base.client.Client;
+import core.base.clients.Client;
 import core.base.implementation.Adaptee;
 
 /**
