@@ -4,6 +4,11 @@
  */
 package main;
 
+import core.base.adapter.Adapter;
+import core.base.adapter.Target;
+import core.base.client.Client;
+import core.base.implementation.Adaptee;
+
 /**
  *
  * @author edangulo
@@ -11,7 +16,12 @@ package main;
 public class Main {
     
     public static void main(String[] args) {
+        Adaptee implementation = new Adaptee();
         
+        Target adapter = new Adapter(implementation);
+        
+        Client client = new Client();
+        client.sendRequest(adapter);
     }
     
 }
