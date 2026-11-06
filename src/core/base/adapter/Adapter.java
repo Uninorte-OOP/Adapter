@@ -20,6 +20,7 @@ public class Adapter implements Target {
 
     @Override
     public void request() {
+        // Logic to adapt client call to implementation (adaptee) needs
         adaptee.specificRequest();
     }
     
