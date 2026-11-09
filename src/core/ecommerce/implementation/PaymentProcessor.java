@@ -4,17 +4,12 @@
  */
 package core.ecommerce.implementation;
 
-import core.ecommerce.adapters.PaymentAdapter;
-
 /**
  *
  * @author edangulo
  */
-public class PaymentProcessor implements PaymentAdapter {
+public interface PaymentProcessor {
 
-    @Override
-    public void pay(double amount) {
-        
-    }
+    public abstract void pay(double amount);
     
 }
